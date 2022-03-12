@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"unsafe"
 
-	"gocv.io/x/gocv"
+	"github.com/jimmyken793/gocv"
 )
 
 // SURF is a wrapper around the cv::SURF algorithm.

@@ -16,7 +16,7 @@ import (
 	"math"
 	"os"
 
-	"gocv.io/x/gocv"
+	"github.com/jimmyken793/gocv"
 )
 
 const MinimumArea = 3000

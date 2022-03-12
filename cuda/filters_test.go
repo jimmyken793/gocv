@@ -4,7 +4,7 @@ import (
 	"image"
 	"testing"
 
-	"gocv.io/x/gocv"
+	"github.com/jimmyken793/gocv"
 )
 
 func TestGaussianFilter_Apply(t *testing.T) {

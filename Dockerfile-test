@@ -10,9 +10,9 @@ FROM gocv/opencv:4.5.3 AS gocv-test
 
 ENV GOPATH /go
 
-COPY . /go/src/gocv.io/x/gocv/
+COPY . /go/src/github.com/jimmyken793/gocv/
 
-WORKDIR /go/src/gocv.io/x/gocv
+WORKDIR /go/src/github.com/jimmyken793/gocv
 
 RUN go get -u github.com/rakyll/gotest
 

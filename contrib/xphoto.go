@@ -6,7 +6,7 @@ package contrib
 */
 import "C"
 import (
-	"gocv.io/x/gocv"
+	"github.com/jimmyken793/gocv"
 	"unsafe"
 )
 

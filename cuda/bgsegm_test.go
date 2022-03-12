@@ -1,7 +1,7 @@
 package cuda
 
 import (
-	"gocv.io/x/gocv"
+	"github.com/jimmyken793/gocv"
 	"testing"
 )
 

@@ -2,7 +2,7 @@
 
 [![GoCV](https://raw.githubusercontent.com/hybridgroup/gocv/release/images/gocvlogo.jpg)](http://gocv.io/)
 
-[![Go Reference](https://pkg.go.dev/badge/gocv.io/x/gocv.svg)](https://pkg.go.dev/gocv.io/x/gocv)
+[![Go Reference](https://pkg.go.dev/badge/github.com/jimmyken793/gocv.svg)](https://pkg.go.dev/github.com/jimmyken793/gocv)
 [![CircleCI Build status](https://circleci.com/gh/hybridgroup/gocv/tree/dev.svg?style=svg)](https://circleci.com/gh/hybridgroup/gocv/tree/dev)
 [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/9asd5foet54ru69q/branch/dev?svg=true)](https://ci.appveyor.com/project/deadprogram/gocv/branch/dev)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hybridgroup/gocv)](https://goreportcard.com/report/github.com/hybridgroup/gocv)
@@ -26,7 +26,7 @@ This example opens a video capture device using device "0", reads frames, and sh
 package main
 
 import (
-	"gocv.io/x/gocv"
+	"github.com/jimmyken793/gocv"
 )
 
 func main() {
@@ -55,7 +55,7 @@ import (
 	"fmt"
 	"image/color"
 
-	"gocv.io/x/gocv"
+	"github.com/jimmyken793/gocv"
 )
 
 func main() {
@@ -232,7 +232,7 @@ To verify your installation you can run one of the included examples.
 
 First, change the current directory to the location of the GoCV repo:
 
-	cd $HOME/src/gocv.io/x/gocv
+	cd $HOME/src/github.com/jimmyken793/gocv
 
 Now you should be able to build or run any of the examples:
 
@@ -502,7 +502,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"gocv.io/x/gocv"
+	"github.com/jimmyken793/gocv"
 )
 
 func leak() {
@@ -525,10 +525,10 @@ Running this program produces the following output:
 ```
 initial MatProfile count: 0
 final MatProfile count: 1
-gocv.io/x/gocv.Mat profile: total 1
+github.com/jimmyken793/gocv.Mat profile: total 1
 1 @ 0x40b936c 0x40b93b7 0x40b94e2 0x40b95af 0x402cd87 0x40558e1
-#	0x40b936b	gocv.io/x/gocv.newMat+0x4b	/go/src/gocv.io/x/gocv/core.go:153
-#	0x40b93b6	gocv.io/x/gocv.NewMat+0x26	/go/src/gocv.io/x/gocv/core.go:159
+#	0x40b936b	github.com/jimmyken793/gocv.newMat+0x4b	/go/src/github.com/jimmyken793/gocv/core.go:153
+#	0x40b93b6	github.com/jimmyken793/gocv.NewMat+0x26	/go/src/github.com/jimmyken793/gocv/core.go:159
 #	0x40b94e1	main.leak+0x21			/go/src/github.com/dougnd/gocvprofexample/main.go:11
 #	0x40b95ae	main.main+0xae			/go/src/github.com/dougnd/gocvprofexample/main.go:16
 #	0x402cd86	runtime.main+0x206		/usr/local/Cellar/go/1.11.1/libexec/src/runtime/proc.go:201
@@ -546,7 +546,7 @@ import (
 	_ "net/http/pprof"
 	"time"
 
-	"gocv.io/x/gocv"
+	"github.com/jimmyken793/gocv"
 )
 
 func leak() {
@@ -567,7 +567,7 @@ func main() {
 
 ```
 
-This will leak a `Mat` once per second.  You can see the current profile count and stack traces by going to the installed HTTP debug interface: [http://localhost:6060/debug/pprof/gocv.io/x/gocv.Mat](http://localhost:6060/debug/pprof/gocv.io/x/gocv.Mat?debug=1).
+This will leak a `Mat` once per second.  You can see the current profile count and stack traces by going to the installed HTTP debug interface: [http://localhost:6060/debug/pprof/github.com/jimmyken793/gocv.Mat](http://localhost:6060/debug/pprof/github.com/jimmyken793/gocv.Mat?debug=1).
 
 
 ## How to contribute

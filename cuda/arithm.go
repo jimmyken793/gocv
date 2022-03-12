@@ -8,7 +8,7 @@ package cuda
 */
 import "C"
 
-import "gocv.io/x/gocv"
+import "github.com/jimmyken793/gocv"
 
 // Abs computes an absolute value of each matrix element.
 //

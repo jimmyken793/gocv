@@ -12,8 +12,8 @@ package main
 import (
 	"fmt"
 
-	"gocv.io/x/gocv"
-	"gocv.io/x/gocv/openvino/ie"
+	"github.com/jimmyken793/gocv"
+	"github.com/jimmyken793/gocv/openvino/ie"
 )
 
 func main() {

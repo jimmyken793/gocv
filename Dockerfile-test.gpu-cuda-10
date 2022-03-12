@@ -9,9 +9,9 @@ FROM gocv/opencv:4.5.3-gpu-cuda-10 AS gocv-gpu-test-cuda-10
 ENV GOPATH /go
 ENV PATH="${PATH}:/go/bin"
 
-COPY . /go/src/gocv.io/x/gocv/
+COPY . /go/src/github.com/jimmyken793/gocv/
 
-WORKDIR /go/src/gocv.io/x/gocv
+WORKDIR /go/src/github.com/jimmyken793/gocv
 
 RUN go get -u github.com/rakyll/gotest
 

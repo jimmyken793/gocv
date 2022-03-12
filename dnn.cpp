@@ -264,3 +264,7 @@ void NMSBoxesWithParams(struct Rects bboxes, FloatVector scores, const float sco
     indices->val = ptr;
     return;
 }
+
+void deleteIntVectorValue(int* ptr) {
+    delete[] ptr;
+}

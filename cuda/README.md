@@ -47,7 +47,7 @@ If you need static opencv libraries
 
 Then finally verify that it is all working 
 
-    cd $GOPATH/src/gocv.io/x/gocv
+    cd $GOPATH/src/github.com/jimmyken793/gocv
 	go run ./cmd/cuda/main.go
 	
 You should see something along the lines of:
